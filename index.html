@@ -1,47 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>HTML5ÊµÏÖÖÐ¹úÏóÆåÓÎÏ· - Õ¾³¤ËØ²Ä</title>
-<link href="css/zzsc.css" type="text/css" rel="stylesheet" />
+<meta charset="utf-8">
+ <meta name="Keywords" content="HTML5æ¸¸æˆ,HTML5ç½‘é¡µæ¸¸æˆ,HTML5æ°´æžœå¿è€…,HTML5ç‰ˆæ°´æžœå¿è€…">
+<meta name="description" content="HTML5ç‰ˆæ°´æžœå¿è€…æ¸¸æˆ">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="images/index.css">
+<title>HTML5æ¸¸æˆæ°´æžœå¿è€…ç½‘é¡µç‰ˆ-HTML5æ˜Ÿç©º</title>
+<!--[if lt IE 9]><script>document.createElement("canvas");</script><![endif]-->
 </head>
 <body>
-<div class="box" id="box">
-	<div class="chess_left">
-		<canvas id="chess">¶Ô²»Æð£¬ÄúµÄä¯ÀÀÆ÷²»Ö§³ÖHTML5£¬ÇëÉý¼¶ä¯ÀÀÆ÷ÖÁIE9¡¢firefox»òÕß¹È¸èä¯ÀÀÆ÷£¡</canvas>
-		<audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
-		<!--<audio src="audio/check.wav" id="checkAudio" preload="auto"></audio>-->
-		<audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>
-		<div>
-			<div class="bn_box" id="bnBox">
-				<input type="button" name="offensivePlay" id="tyroPlay" value="ÐÂÊÖË®Æ½" />
-				<input type="button" name="offensivePlay" id="superPlay" value="ÖÐ¼¶Ë®Æ½" />
-                <input type="button" name="button" id="" value="´óÊ¦Ë®Æ½" disabled />
-				<!--
-			<input type="button" name="offensivePlay" id="offensivePlay" value="ÏÈÊÖ¿ªÊ¼" />
-			<input type="button" name="defensivePlay" id="defensivePlay" value="ºóÊÖ¿ªÊ¼" />
-			-->
-				<input type="button" name="regret" id="regretBn" value="»ÚÆå" />
-				<input type="button" name="billBn" id="billBn" value="ÆåÆ×" class="bn_box" />
-				<input type="button" name="stypeBn" id="stypeBn" value="»»·ô" />
-			</div>
-		</div>
-	</div>
-	<div class="chess_right" id="chessRight">
-		<select name="billList" id="billList">
-		</select>
-		<ol id="billBox" class="bill_box">
-		</ol>
-	</div>
-	<div id="moveInfo" class="move_info"> </div>
+<div id="extra"></div>
+
+<canvas id="view" width="640" height="480"></canvas>
+<div id="desc">
+    <div>ç”¨é¼ æ ‡æ»‘åŠ¨æ°´æžœå¼€å§‹æ¸¸æˆ</div>
+	<div>HTML5æ¸¸æˆã€Šæ°´æžœå¿è€…ã€‹ç½‘é¡µç‰ˆ<a href="http://www.html5star.com" target="_blank">HTML5æ˜Ÿç©º</a></div>
+	<div id="browser"></div>
 </div>
-<script src="js/common.js"></script> 
-<script src="js/play.js"></script> 
-<script src="js/AI.js"></script> 
-<script src="js/bill.js"></script> 
-<script src="js/gambit.js"></script>
-<div style="text-align:center;clear:both">
-<p>ÊÊÓÃä¯ÀÀÆ÷£º360¡¢FireFox¡¢Chrome¡¢Safari¡¢Opera¡¢°ÁÓÎ¡¢ËÑ¹·¡¢ÊÀ½çÖ®´°. ²»Ö§³ÖIE8¼°ÒÔÏÂä¯ÀÀÆ÷¡£</p>
-</div>
+<script src="scripts/all.js"></script>
 </body>
 </html>
