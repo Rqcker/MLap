@@ -31,7 +31,8 @@ while (True):
         ## smile detection
         # use smile cascade classifier engine to perform eye recognition in the face area
         # and the returned eyes is a list of eye coordinates
-
+        smiles = smile_cascade.detectMultiScale(face_area, scaleFactor=1.16, minNeighbors=65, minSize=(25, 25),
+                                                flags=cv2.CASCADE_SCALE_IMAGE)
         for (ex, ey, ew, eh) in smiles:
             # draw a smile frame, red (BGR color system), with a brush width of 1
             cv2.rectangle(face_area, (ex, ey), (ex + ew, ey + eh), (0, 0, 255), 1)
