@@ -1,0 +1,11 @@
+RAInS Summer Project(OpenCVTest)
+============
+This project uses python's existing pip installation warehouse to complete the information collection during the use of the openCV framework
+Its purpose is to capture the information and logs of system operation during the use of the OpenCV framework, and store them as JSON files and form visual html charts to complete the connection of the RAInS API.
+* OpenCVTest/motion_detector.py: Use the OpenCV framework, and capture motion time and motion images, and store them as JSON files.
+* OpenCVTest/times.json: JSON time report for OpenCV operation
+* OpenCVTest/times.csv: CSV time report for OpenCV operation
+* OpenCVTest/test.py: A small example of test CV image generation
+* OpenCVTest/graph.py: call motion_detector.py's motion time capture information to generate a visual chart
+* OpenCVTest/graph.json: OpenCV time capture information visualization chart
+After the JSON report is generated, the JSON file can be used as an API interface for accountability to complete other tasks.
